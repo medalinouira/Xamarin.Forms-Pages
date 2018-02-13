@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Pages.Views.NavigationPageView"
+             Title="NavigationPage"             
+             ControlTemplate="{StaticResource SweetTemplate}">
+
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+
+            <Button x:Name="btnNavigateToFirstPage" 
+                    Text="NavigateTo FirstPage"
+                    Style="{StaticResource BtnPinkStyle}"/>
+
+            <Button x:Name="btnNavigateToSecondPage"
+                    Text="NavigateTo SecondPage"
+                    Style="{StaticResource BtnGrayStyle}"/>
+
+            <Button x:Name="btnNavigateToThirdPage"
+                    Text="NavigateTo ThirdPage"                        
+                    Style="{StaticResource BtnPinkStyle}"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

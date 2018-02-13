@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Pages.Views.ContentPageView"
+             Title="ContentPage"             
+             ControlTemplate="{StaticResource SweetTemplate}">
+    
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+
+            <Label Text="I'm a ContentPage"
+                   VerticalOptions="CenterAndExpand"
+                   Style="{StaticResource LbGrayStyle}"/>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Pages.Views.MasterPageView"
+             Title="Master">
+
+    <StackLayout>
+
+        <ListView x:Name="MenuItemsListView"
+                  SeparatorVisibility="Default"
+                  SeparatorColor="White"
+                  HasUnevenRows="true"
+                  BackgroundColor="#23282d"
+                  ItemsSource="{Binding MenuItems}"
+                  ItemTemplate="{StaticResource MasterPageMenuItemTemplate}">
+
+            <ListView.Header>
+
+                <Grid BackgroundColor="#7E1335">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="10"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="1"
+                           Grid.Row="2"
+                           Text="MasterDetailsView"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           Style="{DynamicResource SubtitleStyle}"/>
+                    
+                </Grid>
+                
+            </ListView.Header>
+
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>

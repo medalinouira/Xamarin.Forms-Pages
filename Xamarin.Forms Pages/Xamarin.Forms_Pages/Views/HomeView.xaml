@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Pages.Views.HomeView"             
+             Title="HomePage"
+             ControlTemplate="{StaticResource SweetTemplate}">
+
+    <ContentPage.Content>
+
+        <StackLayout Spacing="1"
+                     Orientation="Vertical"                         
+                     VerticalOptions="CenterAndExpand">
+
+            <Button x:Name="btnTabbedPage"  
+                    Text="TabbedPage"                        
+                    Style="{StaticResource BtnGrayStyle}"/>
+
+            <Button x:Name="btnContentPage"
+                    Text="ContentPage"                        
+                    Style="{StaticResource BtnPinkStyle}"/>
+
+            <Button x:Name="btnCarouselPage"  
+                    Text="CarouselPage"
+                    Style="{StaticResource BtnGrayStyle}"/>
+
+            <Button x:Name="btnTemplatedPage" 
+                    Text="TemplatedPage"
+                    Style="{StaticResource BtnPinkStyle}"/>
+
+            <Button x:Name="btnNavigationPage"
+                    Text="NavigationPage"
+                    Style="{StaticResource BtnGrayStyle}"/>
+
+            <Button x:Name="btnMasterDetailPage"
+                    Text="MasterDetailPage"                        
+                    Style="{StaticResource BtnPinkStyle}"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
